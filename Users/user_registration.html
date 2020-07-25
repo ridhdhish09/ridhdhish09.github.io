@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <div
+        style="
+          border: 1px solid #000000;
+          box-shadow: 0px 3px 4px #bbb;
+          width: 400px;
+          height: 470px;
+        "
+      >
+        <form action="user_login.html" method="get">
+          <table>
+            <thead>
+              <th colspan="2"><h2>User Registration</h2></th>
+            </thead>
+            <tr>
+              <td><h3>Name:</h3></td>
+              <td><input type="text" name="user_name" /></td>
+            </tr>
+            <tr>
+              <td><h3>Email Id:</h3></td>
+              <td><input type="email" name="user_email" /></td>
+            </tr>
+            <tr>
+              <td><h3>Password:</h3></td>
+              <td><input type="password" name="user_password" /></td>
+            </tr>
+            <tr>
+              <td><h3>Re-enter Password:</h3></td>
+              <td><input type="password" name="user_password2" /></td>
+            </tr>
+            <tr>
+              <td><h3>Gender:</h3></td>
+              <td>
+                <input type="radio" name="user_gender" />Male
+                <input type="radio" name="user_gender" />Female
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button
+                  value="Register"
+                  type="submit"
+                  style="width: 300px; height: 30px;"
+                >
+                  Register
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <a href="user_login.html">Already have account?</a>
+      </div>
+    </center>
+  </body>
+</html>
