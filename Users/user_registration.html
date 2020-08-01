@@ -3,61 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/registration.css" />
   </head>
   <body>
-    <center>
-      <div
-        style="
-          border: 1px solid #000000;
-          box-shadow: 0px 3px 4px #bbb;
-          width: 400px;
-          height: 470px;
-        "
-      >
-        <form action="user_login.html" method="get">
-          <table>
-            <thead>
-              <th colspan="2"><h2>User Registration</h2></th>
-            </thead>
-            <tr>
-              <td><h3>Name:</h3></td>
-              <td><input type="text" name="user_name" /></td>
-            </tr>
-            <tr>
-              <td><h3>Email Id:</h3></td>
-              <td><input type="email" name="user_email" /></td>
-            </tr>
-            <tr>
-              <td><h3>Password:</h3></td>
-              <td><input type="password" name="user_password" /></td>
-            </tr>
-            <tr>
-              <td><h3>Re-enter Password:</h3></td>
-              <td><input type="password" name="user_password2" /></td>
-            </tr>
-            <tr>
-              <td><h3>Gender:</h3></td>
-              <td>
-                <input type="radio" name="user_gender" />Male
-                <input type="radio" name="user_gender" />Female
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <button
-                  value="Register"
-                  type="submit"
-                  style="width: 300px; height: 30px;"
-                >
-                  Register
-                </button>
-              </td>
-            </tr>
-          </table>
-        </form>
-        <a href="user_login.html">Already have account?</a>
+    <div class="main">
+      <div class="form-header">
+        <h1>Registration</h1>
+        <p style="font-size: 13px; font-family: 'Nunito Sans', sans-serif;">
+          Fill up all the given details to register yourself.
+        </p>
+        <hr style="margin-left: 20px; margin-right: 20px;" />
       </div>
-    </center>
+      <div class="form-body">
+        <form class="form-form">
+          <div>
+            <label style="font-size: 15px;">Username:</label><br />
+            <input
+              class="input-control"
+              type="text"
+              placeholder="e.g John Wick"
+            />
+          </div>
+          <div style="margin-top: 15px;">
+            <label style="font-size: 15px;">Email Id:</label><br />
+            <input
+              class="input-control"
+              type="email"
+              placeholder="e.g john123@gmail.com"
+            />
+          </div>
+          <div style="margin-top: 15px;">
+            <label style="font-size: 15px;">Password:</label><br />
+            <input
+              class="input-control"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+          <div style="margin-top: 15px;">
+            <label style="font-size: 15px;">Re-enter password:</label><br />
+            <input
+              class="input-control"
+              type="password"
+              placeholder="Re-enter password"
+            />
+          </div>
+          <div style="margin-top: 15px;">
+            <label style="font-size: 15px;">Gender:</label><br />
+            <input
+              class="radio-button"
+              type="radio"
+              style="margin-top: 10px;"
+              name="gender"
+            />
+            <label style="font-size: 15px; font-family: 'Poppins', sans-serif;"
+              >Male</label
+            >
+            <input
+              class="radio-button"
+              style="margin-left: 50px; margin-top: 10px;"
+              type="radio"
+              name="gender"
+            />
+            <label style="font-size: 15px; font-family: 'Poppins', sans-serif;"
+              >Female</label
+            >
+          </div>
+          <div style="margin-top: 10px;">
+            <button class="btn-primary" style="font-size: 16px;">
+              <a
+                href="../index.html"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                Register
+              </a>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="form-end">
+        <a href="../index.html">Already have account?</a>
+      </div>
+    </div>
   </body>
 </html>

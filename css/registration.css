@@ -1,0 +1,70 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  background: rgb(228, 215, 215);
+}
+
+.main {
+  background: whitesmoke;
+  position: absolute;
+  text-align: center;
+  width: 450px;
+  height: 85%;
+  margin-top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 1px rgb(247, 245, 245);
+  box-shadow: 0 0 10px rgb(175, 152, 152);
+}
+
+.form-header {
+  margin-top: 33px;
+  font-family: "Poppins", sans-serif;
+  color: #3b3f5c;
+}
+
+.form-body {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 4px;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+.input-control {
+  width: 360px;
+  height: 30px;
+  margin-top: 5px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgb(175, 152, 152);
+  font-size: 15px;
+}
+
+.radio-button {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-primary {
+  width: 370px;
+  height: 40px;
+  margin-top: 12px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #1b55e2;
+  color: white;
+  box-shadow: 0 0 8px #1b55e2;
+}
+
+.form-end {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}

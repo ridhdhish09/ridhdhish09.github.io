@@ -3,10 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Index</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
   </head>
   <body>
-    <a href="Users/user_login.html">Login as user</a>
-    <a href="Admin/admin_login.html">Login as admin</a>
+    <div class="main">
+      <div class="form-header">
+        <h1>Login</h1>
+        <p style="font-size: 13px; font-family: 'Nunito Sans', sans-serif;">
+          Log in to your account to continue.
+        </p>
+        <hr style="margin-left: 20px; margin-right: 20px;" />
+      </div>
+      <div class="form-body">
+        <form class="form-form">
+          <div>
+            <label style="font-size: 17px;">Username:</label><br />
+            <input type="text" placeholder="e.g John Wick" />
+          </div>
+          <div style="margin-top: 35px;">
+            <label style="font-size: 17px;">Password:</label><br />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div style="margin-top: 35px;">
+            <button class="btn-primary" style="font-size: 16px;">
+              <a
+                href="/Users/user_index.html"
+                style="
+                  width: inherit;
+                  text-decoration: none;
+                  color: white;
+                  font-family: 'Poppins', sans-serif;
+                "
+                >Login</a
+              >
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="form-end">
+        <a href="">Forgot password?</a>
+        <p>
+          Not interested?
+          <a href="/Users/user_registration.html">Create new account here</a>
+        </p>
+        <a href="Admin/admin_login.html">Login as Admin</a>
+      </div>
+    </div>
   </body>
 </html>

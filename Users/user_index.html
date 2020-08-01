@@ -3,24 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/user_index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1 style="text-align: center;">
-      Portal for Goverment schemes and policies
-    </h1>
-    <hr />
-
-    <ol>
-      <li><a href="#">MYSY</a></li>
-      <p>Brief description of the scheme/policy</p>
-      <br />
-
-      <li><a href="#">Beti bachao, beti padhao</a></li>
-      <p>
-        This is a social campaign aimed at eradication of female foeticide and
-        raising awareness on welfare services intended for young Indian girls.
-      </p>
-    </ol>
+    <div style="margin: 0px; padding: 0px;">
+      <div style="background: rgb(117, 128, 224); margin: 0px; padding: 0px;">
+        <h1
+          style="
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Poppins', sans-serif;
+          "
+        >
+          Portal for Goverment schemes and policies
+        </h1>
+        <ul class="navbar-ul">
+          <li class="navbar-li">
+            <a style="color: white;" class="active" href="#home">Home</a>
+          </li>
+          <li class="navbar-li"><a href="#news">News</a></li>
+          <li class="navbar-li"><a href="#contact">Contact</a></li>
+          <li class="navbar-li"><a href="#about">About</a></li>
+          <li class="navbar-li" style="float: right; margin-right: 45px;">
+            <!-- <i
+              class="fa fa-user-circle-o"
+              style="font-size: 25px;"
+              aria-hidden="true"
+            ></i> -->
+            <a href="../index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="scheme-header">
+        <h2 style="font-family: 'Poppins', sans-serif;">
+          All schemes and policies
+        </h2>
+        <hr style="background: black; height: 1px;" />
+      </div>
+      <div class="scheme-header" style="margin-right: 200px;">
+        <div class="scheme-div">
+          <h3><a class="scheme-title" href="">Model School scheme</a></h3>
+          <p>
+            The scheme aims to provide quality education to talented rural
+            children through setting up of 6,000 model schools as benchmark of
+            excellence at block level at the rate of one school per block. You
+            can find detailed information on this scheme, its objectives, target
+            group, assistance, implementation, etc. Details of latest
+            developments related to this scheme are also available.
+          </p>
+          <hr
+            style="
+              height: 0px;
+              border-bottom: 1px;
+              background: rgb(201, 192, 192);
+            "
+          />
+        </div>
+        <div class="scheme-div">
+          <h3>
+            <a class="scheme-title" href=""
+              >Scheme of Vocationalisation of Secondary Education</a
+            >
+          </h3>
+          <p>
+            The Centrally Sponsored Scheme of Vocationalisation of Secondary
+            Education provides for diversification of educational opportunities
+            so as to enhance individual employability, reduce the mismatch
+            between demand and supply of skilled manpower and provides an
+            alternative for those pursuing higher education. You can get
+            information on this scheme, its objectives, financial assistance,
+            implementation, etc.
+          </p>
+          <hr
+            style="
+              height: 0px;
+              border-bottom: 1px;
+              background: rgb(201, 192, 192);
+            "
+          />
+        </div>
+        <div class="scheme-div">
+          <h3>
+            <a class="scheme-title" href=""
+              >Scheme for Assistance to Voluntary Agencies for adult
+              education</a
+            >
+          </h3>
+          <p>
+            The projects aimed at eradication of illiteracy which includes Total
+            Literacy Campaigns (TLCs)/Post Literacy Campaigns (PLCs) and
+            self-directed continuing education through establishment of
+            continuing education centres and launching of target specific need
+            based and innovative programme such as Equivalency Programmes,
+            Quality of Life Improvement Programmes (QLIP) and Individual
+            Interest Promotion Programmes. You can find detailed information...
+          </p>
+          <hr
+            style="
+              height: 0px;
+              border-bottom: 1px;
+              background: rgb(201, 192, 192);
+            "
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

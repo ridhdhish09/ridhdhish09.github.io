@@ -3,45 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
-    <center>
-      <div
-        style="
-          border: 1px solid #000000;
-          box-shadow: 0px 3px 4px #bbb;
-          width: 400px;
-          height: 280px;
-        "
-      >
-        <form action="admin_index.html" method="get">
-          <table>
-            <thead>
-              <th colspan="2"><h2>Admin Login</h2></th>
-            </thead>
-            <tr>
-              <td><h3>Email Id:</h3></td>
-              <td><input type="email" name="admin_email" /></td>
-            </tr>
-            <tr>
-              <td><h3>Password:</h3></td>
-              <td><input type="password" name="admin_password" /></td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <button
-                  value="Login"
-                  type="submit"
-                  style="width: 300px; height: 30px;"
-                >
-                  Login
-                </button>
-              </td>
-            </tr>
-          </table>
+    <div class="main">
+      <div class="form-header">
+        <h1>Login as Admin</h1>
+        <p style="font-size: 13px; font-family: 'Nunito Sans', sans-serif;">
+          Log in to your account to continue.
+        </p>
+        <hr style="margin-left: 20px; margin-right: 20px;" />
+      </div>
+      <div class="form-body">
+        <form class="form-form">
+          <div>
+            <label style="font-size: 17px;">Username:</label><br />
+            <input type="text" placeholder="e.g John Wick" />
+          </div>
+          <div style="margin-top: 35px;">
+            <label style="font-size: 17px;">Password:</label><br />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div style="margin-top: 35px;">
+            <button class="btn-primary" style="font-size: 16px;">
+              <a
+                href="admin_index.html"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-family: 'Poppins', sans-serif;
+                "
+                >Login</a
+              >
+            </button>
+          </div>
         </form>
       </div>
-    </center>
+      <div class="form-end"><a href="">Forgot password?</a><br /></div>
+      <div style="margin-top: 20px; font-family: 'Poppins', sans-serif;">
+        <a href="../index.html">Are you a User?</a>
+      </div>
+    </div>
   </body>
 </html>
