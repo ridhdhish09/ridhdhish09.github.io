@@ -30,27 +30,39 @@
         <hr style="margin-left: 20px; margin-right: 20px;" />
       </div>
       <div class="form-body">
-        <form class="form-form">
+        <form class="form-form" id="form_login">
           <div>
             <label style="font-size: 17px;">Username:</label><br />
-            <input type="text" placeholder="e.g John Wick" />
+            <input
+              type="text"
+              id="username"
+              placeholder="e.g John Wick"
+              required
+            />
           </div>
           <div style="margin-top: 35px;">
             <label style="font-size: 17px;">Password:</label><br />
-            <input type="password" placeholder="Password" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
           </div>
-          <div style="margin-top: 35px;">
-            <button class="btn-primary" style="font-size: 16px;">
-              <a
+          <div style="margin-top: 60px;">
+            <button
+              class="btn-primary"
+              type="button"
+              style="padding: 8px 159px;"
+              onclick="user_auth()"
+            >
+              Login
+              <!-- <a
+                class="btn-primary"
+                style="padding: 8px 159px;"
                 href="/Users/user_index.html"
-                style="
-                  width: inherit;
-                  text-decoration: none;
-                  color: white;
-                  font-family: 'Poppins', sans-serif;
-                "
                 >Login</a
-              >
+              > -->
             </button>
           </div>
         </form>
@@ -65,4 +77,13 @@
       </div>
     </div>
   </body>
+
+  <!-- importing javascript -->
+  <script src="/Js/user.js"></script>
+
+  <script>
+    window.onload = function exampleFunction() {
+      window.alert("Username: user  Password: user");
+    };
+  </script>
 </html>
