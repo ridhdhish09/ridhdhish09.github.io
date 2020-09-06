@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+          <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/user_index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+        h4 {
+            color: black;
+        }
+    </style>
+      </head>
+<body> 
+    <div style="background: rgb(117, 128, 224); margin: 0px; padding: 0px;">
+        <h1
+          style="
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Poppins', sans-serif;
+          "
+        >
+          Portal for Goverment schemes and policies
+        </h1>
+        <ul class="navbar-ul">
+          <li class="navbar-li">
+            <a style="color: white;" class="active" href="/Users/user_index.html">Home</a>
+          </li>
+          <li class="navbar-li"><a href="#news">News</a></li>
+          <li class="navbar-li"><a href="#contact">Contact</a></li>
+          <li class="navbar-li"><a href="#about">About</a></li>
+          <li class="navbar-li">
+            <a href="/Users/user_profile.html">Profile</a>
+          </li>
+          <li class="navbar-li"><a href="./user_change.html">Change Password</a></li>
+          <li class="navbar-li" style="float: right; margin-right: 45px;">
+            <a href="../index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container bootstrap snippet">    
+          <div class="row">
+                <div class="col-sm-3"><!--left col-->                             
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home">
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">                                
+                                <div class="col-xs-6">
+                                   <h4>New Password</h4>
+                                    <input type="password" class="form-control" name="New Password" id="new" placeholder="New Password" title="Enter new password">
+                                </div>
+                            </div>
+                            <div class="form-group">                                
+                                <div class="col-xs-6">
+                                    <h4>Verify Password</h4>
+                                     <input type="password" class="form-control" name="Verify Password" id="verify" placeholder="Verify Password" title="Both the fields must same">
+                                 </div>
+                            </div> 
+                            <div class="form-group">
+                              <div class="col-xs-12">
+                                   <br>
+                                     <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Change</button>
+                                      <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                               </div>
+                            </div>                                           
+                        </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+</body>
+</html>                                         
