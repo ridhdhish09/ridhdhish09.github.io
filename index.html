@@ -38,12 +38,13 @@
         <hr style="margin-left: 20px; margin-right: 20px" />
       </div>
       <div class="form-body">
-        <form class="form-form" id="form_login">
+        <form class="form-form" name="form-login" id="form_login">
           <div>
             <label style="font-size: 17px">Username:</label><br />
             <input
               type="text"
               id="username"
+              name="username"
               placeholder="e.g John Wick"
               required
             />
@@ -53,6 +54,7 @@
             <input
               type="password"
               id="password"
+              name="password"
               placeholder="Password"
               required
             />
@@ -65,12 +67,6 @@
               onclick="user_auth()"
             >
               Login
-              <!-- <a
-                class="btn-primary"
-                style="padding: 8px 159px;"
-                href="/Users/user_index.html"
-                >Login</a
-              > -->
             </button>
           </div>
         </form>
@@ -101,6 +97,34 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+      integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("form[name='form-login']").validate({
+          rules: {
+            username: "required",
+            password: {
+              required: true,
+            },
+          },
+
+          messages: {
+            username: "Please enter your username",
+            password: {
+              required: "Please provide a password",
+            },
+          },
+          submitHandler: function (form) {
+            form.submit();
+          },
+        });
+      });
+    </script>
   </body>
 
   <!-- importing javascript -->

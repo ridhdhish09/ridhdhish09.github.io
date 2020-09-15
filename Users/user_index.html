@@ -6,6 +6,13 @@
     <title>Home</title>
 
     <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
@@ -22,6 +29,8 @@
   </head>
   <body>
     <div style="margin: 0px; padding: 0px">
+      <div class="card" id="show-dialog"></div>
+
       <div style="background: rgb(117, 128, 224); margin: 0px; padding: 0px">
         <h1
           style="
@@ -127,7 +136,64 @@
             "
           />
         </div>
+
+        <div class="scheme-div" id="show-div">
+          <h3>
+            <a class="scheme-title" href=""
+              >Assistance to Voluntary Agencies for adult education</a
+            >
+          </h3>
+          <p>
+            The projects aimed at eradication of illiteracy which includes Total
+            Literacy Campaigns (TLCs)/Post Literacy Campaigns (PLCs) and
+            self-directed continuing education through establishment of
+            continuing education centres and launching of target specific need
+            based and innovative programme such as Equivalency Programmes,
+            Quality of Life Improvement Programmes (QLIP) and Individual
+            Interest Promotion Programmes. You can find detailed information...
+          </p>
+          <hr
+            style="
+              height: 0px;
+              border-bottom: 1px;
+              background: rgb(201, 192, 192);
+            "
+          />
+        </div>
+
+        <button
+          class="btn btn-primary"
+          style="margin-bottom: 30px"
+          id="btn-show"
+        >
+          Show more
+        </button>
       </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#show-div").hide();
+        $("#btn-show").on("click", function () {
+          $("#show-div").show(2000);
+        });
+      });
+    </script>
   </body>
 </html>
